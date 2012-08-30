@@ -1,13 +1,12 @@
 <hgroup>
-  <div id="logo">
-  	<div id="logoLeft">{</div>
-  	<div id="logoText">mob</div>
-  	<div id="logoRight">}</div>
-  	<div class="clear"></div>
-  </div>
   <h1><a href="{{ root_url }}/">{{ site.title }}</a></h1>
-  {% if site.subtitle %}
-    <h2>{{ site.subtitle }}</h2>
-  {% endif %}
   <div class="clear"></div>
+  {% if site.subtitle %}
+    <div id="logo">
+      <div id="logoLeft">{</div>
+      <div id="logoText">{{ site.subtitle }}</div>
+      <div id="logoRight">}</div>
+      <div class="clear"></div>
+    </div>
+  {% endif %}
 </hgroup>
